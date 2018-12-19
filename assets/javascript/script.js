@@ -1,3 +1,4 @@
+$(document).ready(function () {
 var location = sessionStorage.getItem("location")
 
 // var cityName = "Irvine";
@@ -15,4 +16,4 @@ $.ajax({
     img.attr("src",response.hits[0].largeImageURL);
     $(".text-muted").html(img);
 });
-
+});
