@@ -64,68 +64,70 @@ $("#submit").on("click", function() {
 
 
 
-if (0 < sum || sum < 15) {
+    if (0 < sum && sum < 15) {
     var outcome = worst[Math.floor(Math.random() * worst.length)]; 
     sessionStorage.setItem("place", outcome)
-    results();
+    
     
 }
 
-if (14 < sum || sum < 29) {
+if (14 < sum && sum < 29) {
     var outcome = bad[Math.floor(Math.random() * bad.length)];
     sessionStorage.setItem("place", outcome)
     results();
 }
 
-if (28 < sum || sum < 43) {
-    outcome = notAsBad[Math.floor(Math.random() * notAsBad.length)];
+if (28 < sum && sum < 43) {
+   var outcome = notAsBad[Math.floor(Math.random() * notAsBad.length)];
     sessionStorage.setItem("place", outcome)
     results();
 }
 
-if (42 < sum || sum < 57) {
-    outcome = notGood[Math.floor(Math.random() * notGood.length)];
+if (42 < sum && sum < 57) {
+   var outcome = notGood[Math.floor(Math.random() * notGood.length)];
     sessionStorage.setItem("place", outcome)
     results();
 }
 
- if ( 56 < sum || sum < 71) {
-    outcome = poor[Math.floor(Math.random() * poor.length)];
+ if ( 56 < sum && sum < 71) {
+   var outcome = poor[Math.floor(Math.random() * poor.length)];
     sessionStorage.setItem("place", outcome)
     results();
  }
 
- if (70 < sum || sum < 85) {
+ if (70 < sum && sum < 85) {
     var outcome = okay[Math.floor(Math.random() * okay.length)];
     sessionStorage.setItem("place", outcome)
     results();
  }
 
- if (84 < sum || sum < 99) {
+ if (84 < sum && sum < 99) {
     var outcome = alright[Math.floor(Math.random() * alright.length)];
     sessionStorage.setItem("place", outcome)
     results();
  }
 
- if (98 < sum || sum < 113) {
+ if (98 < sum && sum < 113) {
     var outcome = better[Math.floor(Math.random() * better.length)];
     sessionStorage.setItem("place", outcome)
     results();
  }
 
- if (112 < sum || sum < 127) {
+ if (112 < sum && sum < 127) {
     var outcome = good[Math.floor(Math.random() * good.length)];
     sessionStorage.setItem("place", outcome)
     results();
  }
 
- if (126 < sum || sum < 141) {
+ if (126 < sum && sum < 141) {
     var outcome = great[Math.floor(Math.random() * great.length)];
     sessionStorage.setItem("place", outcome)
     results();
  }
 
- else {alert("Please answer all questions")}
+ if (isNaN(sum) === true) {
+     alert("please answer all questions")
+ }
 });
 
 });
