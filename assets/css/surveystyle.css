@@ -64,14 +64,6 @@ p {
         border: 1px solid black;
     }
 
-<<<<<<< HEAD
-}
-p {
-    align-content: center;
-    font-weight: bold;
-    font-size: 14px;
-}
-=======
     input[type='radio']:checked:after {
         width: 15px;
         height: 15px;
@@ -85,8 +77,20 @@ p {
         visibility: visible;
         border: 1px solid white;
     }
+    
+    .mt-3 {
+        text-align: center;
+    }
+
     button{
         background-color:#ffa500;
+        margin-bottom: 75px;
+        width: 150px;
+        height: 50px;
+
     }
+<<<<<<< HEAD
 >>>>>>> b90a357584279d1495eca312da150799295edea8
 >>>>>>> 5d7d378305ad87fc3bd6f16d0c29fbbef2c63088
+=======
+>>>>>>> 77678638e5d80d48f2747c03d155d835c090cdb6
