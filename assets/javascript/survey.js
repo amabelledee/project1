@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-$(document).ready(function() {
-  var sum = 0;
-=======
 $(document).ready(function () {
  
     var worst = ["Gary Indiana", "Detroit, Michigan", "flint, michigan", "St. Louis, Missouri", "Memphis, Tennessee"]
@@ -49,7 +45,6 @@ var a17 = Number($("input[name='expenses']:checked").val());
 var a18 = Number($("input[name='family']:checked").val());
 var a20 = Number($("input[name='afraid']:checked").val());
 var a21 = Number($("input[name='done']:checked").val());
->>>>>>> 5d7d378305ad87fc3bd6f16d0c29fbbef2c63088
 
   var check = function() {
     var a1 = Number($("input[name='gratitude']:checked").val());
@@ -98,11 +93,6 @@ var a21 = Number($("input[name='done']:checked").val());
 
   $("#submit").on("click", function() {
     check();
-<<<<<<< HEAD
-    console.log(sum);
-    $("#result").text(sum);
-  });
-=======
     console.log(sum)
    
     
@@ -152,7 +142,6 @@ if (30 < sum < 41) {
  sessionStorage.setItem("location", outcome)
 });
 
->>>>>>> 5d7d378305ad87fc3bd6f16d0c29fbbef2c63088
 });
 //here are results for the survey,
 //0-10 will have five city results and so on for every ten.
