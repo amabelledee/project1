@@ -2,6 +2,7 @@ body {
     background-color: gray;
 }
 #survey {
+    align-content: center;
     border: solid;
     border-width: 3px;
     background-color: beige;
@@ -15,6 +16,7 @@ body {
 
 }
 p {
+    align-content: center;
     font-weight: bold;
     font-size: 14px;
 }
