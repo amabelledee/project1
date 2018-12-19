@@ -1,4 +1,6 @@
 $(document).ready(function () {
+ var place = sessionStorage.getItem("place")
+ console.log(place)
 
     var location = sessionStorage.getItem("location")
 
