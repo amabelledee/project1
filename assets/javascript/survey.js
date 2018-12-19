@@ -23,28 +23,33 @@ $(document).ready(function () {
     
 
 var sum = 0
+
+var results = function() {
+    console.log("insideresults")
+    window.location.assign("./result.html")
+};
  
 var check = function() {
-var a1 = Number($("input[name='gratitude']:checked").val());
-var a2 = Number($("input[name='smile']:checked").val());
-var a3 = Number($("input[name='positivity']:checked").val());
-var a4 = Number($("input[name='learn']:checked").val());
-var a5 = Number($("input[name='pray']:checked").val());
-var a6 = Number($("input[name='breakfast']:checked").val());
-var a7 = Number($("input[name='walk']:checked").val());
-var a8 = Number($("input[name='water']:checked").val());
-var a9 = Number($("input[name='healthy']:checked").val());
-var a10 = Number($("input[name='teeth']:checked").val());
-var a11 = Number($("input[name='time']:checked").val());
-var a12 = Number($("input[name='sleep']:checked").val());
-var a13 = Number($("input[name='exercise']:checked").val());
-var a14 = Number($("input[name='inspired']:checked").val());
-var a15 = Number($("input[name='finance']:checked").val());
-var a16 = Number($("input[name='save']:checked").val());
-var a17 = Number($("input[name='expenses']:checked").val());
-var a18 = Number($("input[name='family']:checked").val());
-var a20 = Number($("input[name='afraid']:checked").val());
-var a21 = Number($("input[name='done']:checked").val());
+var a1 = Number($("input[name='q1']:checked").val());
+var a2 = Number($("input[name='q2']:checked").val());
+var a3 = Number($("input[name='q3']:checked").val());
+var a4 = Number($("input[name='q4']:checked").val());
+var a5 = Number($("input[name='q5']:checked").val());
+var a6 = Number($("input[name='q6']:checked").val());
+var a7 = Number($("input[name='q7']:checked").val());
+var a8 = Number($("input[name='q8']:checked").val());
+var a9 = Number($("input[name='q9']:checked").val());
+var a10 = Number($("input[name='q10']:checked").val());
+var a11 = Number($("input[name='q11']:checked").val());
+var a12 = Number($("input[name='q12']:checked").val());
+var a13 = Number($("input[name='q13']:checked").val());
+var a14 = Number($("input[name='q14']:checked").val());
+var a15 = Number($("input[name='q15']:checked").val());
+var a16 = Number($("input[name='q16']:checked").val());
+var a17 = Number($("input[name='q17']:checked").val());
+var a18 = Number($("input[name='q18']:checked").val());
+var a20 = Number($("input[name='q19']:checked").val());
+var a21 = Number($("input[name='q20']:checked").val());
 
  sum = a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 +
 a10 + a11 + a12 + a13 + a14 + a15 + a16 + a17 + a18 + a20 + a21;
@@ -59,47 +64,68 @@ $("#submit").on("click", function() {
 
 
 
-if (sum < 11) {
+if (0 < sum || sum < 15) {
     var outcome = worst[Math.floor(Math.random() * worst.length)]; 
+    sessionStorage.setItem("place", outcome)
+    results();
+    
 }
 
-if (10 < sum < 21) {
+if (14 < sum || sum < 29) {
     var outcome = bad[Math.floor(Math.random() * bad.length)];
+    sessionStorage.setItem("place", outcome)
+    results();
 }
 
-if (20 < sum < 31) {
+if (28 < sum || sum < 43) {
     outcome = notAsBad[Math.floor(Math.random() * notAsBad.length)];
+    sessionStorage.setItem("place", outcome)
+    results();
 }
 
-if (30 < sum < 41) {
+if (42 < sum || sum < 57) {
     outcome = notGood[Math.floor(Math.random() * notGood.length)];
+    sessionStorage.setItem("place", outcome)
+    results();
 }
 
- if ( 40 < sum < 51) {
+ if ( 56 < sum || sum < 71) {
     outcome = poor[Math.floor(Math.random() * poor.length)];
+    sessionStorage.setItem("place", outcome)
+    results();
  }
 
- if (50 < sum < 61) {
+ if (70 < sum || sum < 85) {
     var outcome = okay[Math.floor(Math.random() * okay.length)];
+    sessionStorage.setItem("place", outcome)
+    results();
  }
 
- if (60 < sum < 71) {
+ if (84 < sum || sum < 99) {
     var outcome = alright[Math.floor(Math.random() * alright.length)];
+    sessionStorage.setItem("place", outcome)
+    results();
  }
 
- if (70 < sum < 81) {
+ if (98 < sum || sum < 113) {
     var outcome = better[Math.floor(Math.random() * better.length)];
+    sessionStorage.setItem("place", outcome)
+    results();
  }
 
- if (80 < sum < 91) {
+ if (112 < sum || sum < 127) {
     var outcome = good[Math.floor(Math.random() * good.length)];
+    sessionStorage.setItem("place", outcome)
+    results();
  }
 
- if (90 < sum < 101) {
+ if (126 < sum || sum < 141) {
     var outcome = great[Math.floor(Math.random() * great.length)];
+    sessionStorage.setItem("place", outcome)
+    results();
  }
 
- sessionStorage.setItem("location", outcome)
+ else {alert("Please answer all questions")}
 });
 
 });
