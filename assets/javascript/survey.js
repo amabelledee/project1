@@ -48,7 +48,7 @@ var worst = ["Gary Indiana", "Detroit, Michigan", "flint, michigan", "St. Louis,
 
 var bad = ["Youngstown, Ohio", "Rockford, Illinois", "Pueblo, Colorado", "San Bernardino, California", "Homestead, Florida "]
  
-notAsBad = ["miami beach florida", "daytona beach florida" "charleson west virgina", "Shreveport, Louisiana", "Dayton, Ohio"]
+notAsBad = ["miami beach florida", "daytona beach florida", "charleson west virgina", "Shreveport, Louisiana", "Dayton, Ohio"]
 
 var notGood = ["Toledo, Ohio", "Buffalo, New York", "Canton, Ohio", "fresno california", "tucson arizona"]
 
