@@ -1,4 +1,5 @@
-// var location = sessionStorage.getItem("location")
+ var place = sessionStorage.getItem("place")
+ console.log(place)
 
 // var cityName = "Irvine";
 var APIKey = "4282776-27fa57906aa34123504a6dc56";
