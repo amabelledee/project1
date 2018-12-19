@@ -44,6 +44,14 @@
         border: 1px solid black;
     }
 
+<<<<<<< HEAD
+}
+p {
+    align-content: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+=======
     input[type='radio']:checked:after {
         width: 15px;
         height: 15px;
@@ -60,3 +68,4 @@
     button{
         background-color:#ffa500;
     }
+>>>>>>> b90a357584279d1495eca312da150799295edea8
