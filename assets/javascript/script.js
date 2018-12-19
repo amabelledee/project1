@@ -1,5 +1,5 @@
 
-// var cityName = "Irvine";
+// Outcome will give name of city
 var APIKey = "4282776-27fa57906aa34123504a6dc56";
 var city = "new york";
 var queryURL = "https://pixabay.com/api/?key=" + APIKey + "&q=" + city + "&image_type=photo" ;
