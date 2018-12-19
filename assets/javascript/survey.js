@@ -1,5 +1,27 @@
 $(document).ready(function () {
  
+    var worst = ["Gary Indiana", "Detroit, Michigan", "flint, michigan", "St. Louis, Missouri", "Memphis, Tennessee"]
+
+    var bad = ["Youngstown, Ohio", "Rockford, Illinois", "Pueblo, Colorado", "San Bernardino, California", "Homestead, Florida "]
+     
+    var notAsBad = ["miami beach florida", "daytona beach florida", "charleson west virgina", "Shreveport, Louisiana", "Dayton, Ohio"]
+    
+    var notGood = ["Toledo, Ohio", "Buffalo, New York", "Canton, Ohio", "fresno california", "tucson arizona"]
+    
+    var poor = ["fortsmith arkansas", "Salt Lake City, Utah", "Gainesville, Florida", "Tacoma, Washington", "Albuquerque, New Mexico" ]
+    
+    var okay = ["lansing michigan", "Cincinnati, Ohio", "Syracuse, New York", "atlanta georgia", "Hartford, Connecticut"]
+    
+    var alright = ["Manchester, New Hampshire", "Columbus, Ohio", "Honolulu, Hawaii", "Sarasota, Florida"]
+    
+    var better = ["portland maine", "asheville north carolina", "boston massachusetes", "Houston texas", "boise idaho"]
+    
+    var good = ["San Jose, California", "Madison, Wisconsin", "San Antonio, Texas", "Raleigh-Durham, North Carolina"]
+    
+    var great = ["austin texas", "colorado springs colorado", "denver colorado", "des moines iowa", "feyetteville arkansas"]
+
+    
+
 var sum = 0
  
 var check = function() {
@@ -32,9 +54,54 @@ a10 + a11 + a12 + a13 + a14 + a15 + a16 + a17 + a18 + a20 + a21;
 $("#submit").on("click", function() {
     check();
     console.log(sum)
-    $("#result").text(sum)
+   
     
-})
+
+
+
+if (sum < 11) {
+    var outcome = worst[Math.floor(Math.random() * worst.length)]; 
+}
+
+if (10 < sum < 21) {
+    var outcome = bad[Math.floor(Math.random() * bad.length)];
+}
+
+if (20 < sum < 31) {
+    outcome = notAsBad[Math.floor(Math.random() * notAsBad.length)];
+}
+
+if (30 < sum < 41) {
+    outcome = notGood[Math.floor(Math.random() * notGood.length)];
+}
+
+ if ( 40 < sum < 51) {
+    outcome = poor[Math.floor(Math.random() * poor.length)];
+ }
+
+ if (50 < sum < 61) {
+    var outcome = okay[Math.floor(Math.random() * okay.length)];
+ }
+
+ if (60 < sum < 71) {
+    var outcome = alright[Math.floor(Math.random() * alright.length)];
+ }
+
+ if (70 < sum < 81) {
+    var outcome = better[Math.floor(Math.random() * better.length)];
+ }
+
+ if (80 < sum < 91) {
+    var outcome = good[Math.floor(Math.random() * good.length)];
+ }
+
+ if (90 < sum < 101) {
+    var outcome = great[Math.floor(Math.random() * great.length)];
+ }
+
+ sessionStorage.setItem("location", outcome)
+});
+
 });
 //here are results for the survey,
 //0-10 will have five city results and so on for every ten.
@@ -44,22 +111,4 @@ $("#submit").on("click", function() {
 //i will write a function that will randomly select one of the five cities that are in the range
 
 
-var worst = ["Gary Indiana", "Detroit, Michigan", "flint, michigan", "St. Louis, Missouri", "Memphis, Tennessee"]
 
-var bad = ["Youngstown, Ohio", "Rockford, Illinois", "Pueblo, Colorado", "San Bernardino, California", "Homestead, Florida "]
- 
-notAsBad = ["miami beach florida", "daytona beach florida", "charleson west virgina", "Shreveport, Louisiana", "Dayton, Ohio"]
-
-var notGood = ["Toledo, Ohio", "Buffalo, New York", "Canton, Ohio", "fresno california", "tucson arizona"]
-
-var poor = ["fortsmith arkansas", "Salt Lake City, Utah", "Gainesville, Florida", "Tacoma, Washington", "Albuquerque, New Mexico" ]
-
-var okay = ["lansing michigan", "Cincinnati, Ohio", "Syracuse, New York", "atlanta georgia", "Hartford, Connecticut"]
-
-var alright = ["Manchester, New Hampshire", "Columbus, Ohio", "Honolulu, Hawaii", "Sarasota, Florida"]
-
-var better = ["portland maine", "asheville north carolina", "boston massachusetes", "Houston texas", "boise idaho"]
-
-var good = ["San Jose, California", "Madison, Wisconsin", "San Antonio, Texas", "Raleigh-Durham, North Carolina"]
-
-var great = ["austin texas", "colorado springs colorado", "denver colorado", "des moines iowa", "feyetteville arkansas"]
