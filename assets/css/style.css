@@ -1,4 +1,30 @@
-body {
-  text-align: center;
-  margin-top: 2%;
+.karen {
+  background-color: #ed6665;
+}
+
+.oscar {
+  background-color: #d6bd80;
+}
+
+.tom {
+  background-color: #64b6b8;
+}
+
+.personalityImage {
+  border-style: solid;
+  border-color: white;
+  border-width: 9px;
+  padding: 0px;
+  margin: 0px;
+}
+.bg {
+  background-image: url("../images/WorkLifeBalanceCloudX.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body,
+html {
+  height: 100%;
 }
