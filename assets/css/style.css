@@ -26,5 +26,22 @@ background-size: cover;
 }
 body, html {
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
+h1{
+    font-weight:100;
+    text-align: center;
+    font-size: 60px;
+    
+}
+.brief{
+    text-align: center;
+    font-weight:300;
+    font-size: 17px;
+    margin-left: 40px;
+    margin-right: 40px;
 
+   
+
+
+}
