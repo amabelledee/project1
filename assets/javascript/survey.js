@@ -1,24 +1,47 @@
 $(document).ready(function () {
 
-    var worst = ["Detroit, Michigan", "St. Louis, Missouri", "Memphis, Tennessee"]
+    var worst = ["Detroit", "St. Louis", "Memphis"]
 
-    var bad = ["San Bernardino, California", "Homestead, Florida", "Merced, California"]
+    var bad = ["San Bernardino", "Homestead", "Merced"]
 
-    notAsBad = ["Miami Beach, Florida", "Daytona Beach, Florida", "Dayton, Ohio"]
+    notAsBad = ["Miami Beach", "Daytona Beach", "Dayton"]
 
-    var notGood = ["Buffalo, New York", "Atlanta, Georgia", "Tucson, Arizona"]
+    var notGood = ["Buffalo", "Atlanta", "Tucson"]
 
-    var poor = ["Fortsmith, Arkansas", "Salt Lake City, Utah", "Gainesville, Florida", "Tacoma, Washington", "Albuquerque, New Mexico"]
+    var poor = ["Fortsmith", "Salt Lake City", "Gainesville", "Tacoma", "Albuquerque"]
 
-    var okay = ["Cincinnati, Ohio", "Syracuse, New York", "Hartford, Connecticut"]
+    var okay = ["Cincinnati", "Syracuse", "Hartford"]
 
-    var alright = ["Columbus, Ohio", "Honolulu, Hawaii", "Seattle, Washington"]
+    var alright = ["Columbus", "Honolulu", "Seattle"]
 
-    var better = ["Portland, Maine", "Asheville, North Carolina", "Boston, Massachusetts"]
+    var better = ["Portland", "Asheville", "Boston"]
 
-    var good = ["Des Moines, Iowa", "San Jose, California", "San Antonio, Texas"]
+    var good = ["Des Moines", "San Jose", "San Antonio"]
 
-    var great = ["Austin, Texas", "Colorado Springs, Colorado", "Denver, Colorado"]
+    var great = ["Austin", "Colorado Springs", "Denver"]
+
+
+    
+    // var worst = ["Detroit, Michigan", "St. Louis, Missouri", "Memphis, Tennessee"]
+
+    // var bad = ["San Bernardino, California", "Homestead, Florida", "Merced, California"]
+
+    // notAsBad = ["Miami Beach, Florida", "Daytona Beach, Florida", "Dayton, Ohio"]
+
+    // var notGood = ["Buffalo, New York", "Atlanta, Georgia", "Tucson, Arizona"]
+
+    // var poor = ["Fortsmith, Arkansas", "Salt Lake City, Utah", "Gainesville, Florida", "Tacoma, Washington", "Albuquerque, New Mexico"]
+
+    // var okay = ["Cincinnati, Ohio", "Syracuse, New York", "Hartford, Connecticut"]
+
+    // var alright = ["Columbus, Ohio", "Honolulu, Hawaii", "Seattle, Washington"]
+
+    // var better = ["Portland, Maine", "Asheville, North Carolina", "Boston, Massachusetts"]
+
+    // var good = ["Des Moines, Iowa", "San Jose, California", "San Antonio, Texas"]
+
+    // var great = ["Austin, Texas", "Colorado Springs, Colorado", "Denver, Colorado"]
+
 
 
     var sum = 0
