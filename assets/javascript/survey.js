@@ -1,24 +1,24 @@
 $(document).ready(function () {
 
-    var worst = ["Detroit", "St. Louis", "Memphis"]
+    var worst = ["Detroit", "St. Louis", "Memphis", "Gary", "Flint"]
 
-    var bad = ["San Bernardino", "Homestead", "Merced"]
+    var bad = ["San Bernardino", "Homestead", "Merced", "Compton", ]
 
-    notAsBad = ["Miami Beach", "Daytona Beach", "Dayton"]
+    notAsBad = ["Miami Beach", "Daytona Beach", "Dayton", "Charleston", "Homestead"]
 
-    var notGood = ["Buffalo", "Atlanta", "Tucson"]
+    var notGood = ["Buffalo", "Atlanta", "Tucson", "Little Rock", "Oakland"]
 
     var poor = ["Fortsmith", "Salt Lake City", "Gainesville", "Tacoma", "Albuquerque"]
 
-    var okay = ["Cincinnati", "Syracuse", "Hartford"]
+    var okay = ["Cincinnati", "Syracuse", "Hartford", "Charlotte", "Boise"]
 
-    var alright = ["Columbus", "Honolulu", "Seattle"]
+    var alright = ["Columbus", "Honolulu", "Seattle", "San Fransisco", "Lexington"]
 
-    var better = ["Portland", "Asheville", "Boston"]
+    var better = ["Portland", "Asheville", "Boston", "Fort Worth", "Phoenix"]
 
-    var good = ["Des Moines", "San Jose", "San Antonio"]
+    var good = ["Des Moines", "San Jose", "San Antonio", "Nashville", "San Jose"]
 
-    var great = ["Austin", "Colorado Springs", "Denver"]
+    var great = ["Austin", "Colorado Springs", "Denver", "Huntsville", "Denver"]
 
 
     

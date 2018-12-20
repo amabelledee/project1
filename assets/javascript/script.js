@@ -24,7 +24,7 @@ $(document).ready(function () {
     }
 
 
-
+    $("h1").text(place);
 
     // axios.get("http://api.openweathermap.org/data/2.5/weather?q=irvine&APPID=399746c3700c10f7ded01a74709fda23")
     // .then(function (response) {
