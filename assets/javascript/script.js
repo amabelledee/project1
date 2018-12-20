@@ -55,14 +55,14 @@ $(document).ready(function () {
             var lat = response.data.coord.lat;
             var lon = response.data.coord.lon
             axios.get("https://api.darksky.net/forecast/163a0e58058c5117fe2fc4237e80ff3f/" + lat + "," + lon)
-.then(function (response2) {
-    console.log(response2);
-    $("#current").text(response2.data.daily.summary);
-    
-})
-.catch(function (error) {
-    console.log(error);
-})
+                .then(function (response2) {
+                    console.log(response2);
+                    $("#current").text(response2.data.daily.summary);
+
+                })
+                .catch(function (error2) {
+                    console.log(error2);
+                })
 
 
         })
