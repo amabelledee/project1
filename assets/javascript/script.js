@@ -46,12 +46,23 @@ $(document).ready(function () {
     axios.get("http://api.openweathermap.org/data/2.5/weather?q=" + place + "&APPID=399746c3700c10f7ded01a74709fda23")
         .then(function (response) {
             console.log(response);
-            $("#current").text(response.data.weather[0].description)
+            // $("#current").text(response.data.weather[0].description)
             $("#temp").text(Math.round(((response.data.main.temp - 273.15) * 1.8) + 32))
             $("#high").text(Math.round(((response.data.main.temp_max - 273.15) * 1.8) + 32))
             $("#low").text(Math.round(((response.data.main.temp_min - 273.15) * 1.8) + 32))
             $("#humidity").text(response.data.main.humidity)
             $("#pressure").text(response.data.main.pressure)
+            var lat = response.data.coord.lat;
+            var lon = response.data.coord.lon
+            axios.get("https://api.darksky.net/forecast/163a0e58058c5117fe2fc4237e80ff3f/" + lat + "," + lon)
+.then(function (response2) {
+    console.log(response2);
+    $("#current").text(response2.data.daily.summary);
+    
+})
+.catch(function (error) {
+    console.log(error);
+})
 
 
         })
