@@ -43,22 +43,4 @@ $("#submit").on("click", function() {
 //i will write a function that will randomly select one of the five cities that are in the range
 
 
-var worst = ["Detroit, Michigan", "St. Louis, Missouri", "Memphis, Tennessee"]
 
-var bad = ["San Bernardino, California", "Homestead, Florida", "Merced, California"]
- 
-notAsBad = ["Miami Beach, Florida", "Daytona Beach, Florida", "Dayton, Ohio"]
-
-var notGood = ["Buffalo, New York", "Atlanta, Georgia", "Tucson, Arizona"]
-
-var poor = ["Fortsmith, Arkansas", "Salt Lake City, Utah", "Gainesville, Florida", "Tacoma, Washington", "Albuquerque, New Mexico" ]
-
-var okay = ["Cincinnati, Ohio", "Syracuse, New York", "Hartford, Connecticut"]
-
-var alright = ["Columbus, Ohio", "Honolulu, Hawaii", "Seattle, Washington"]
-
-var better = ["Portland, Maine", "Asheville, North Carolina", "Boston, Massachusetts"]
-
-var good = ["Des Moines, Iowa", "San Jose, California", "San Antonio, Texas"]
-
-var great = ["Austin, Texas", "Colorado Springs, Colorado", "Denver, Colorado"]
