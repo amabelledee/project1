@@ -16,126 +16,133 @@
     />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
-    <!-- Header -->
-    <header class="blog-header py-3">
-      <div class="row flex-nowrap justify-content-between align-items-center">
-        <div class="col-12 pt-1 navbar-brand">
-          <img
-            src="assets/images/HughJassConstructionLogo.gif"
-            height="30"
-            class="d-inline-block align-top"
-            alt="Hugh Jass Construction Logo"
-          />
-          Hugh Jass Construction
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item active"></li>
-            </ul>
+    <div class="container-fluid bg">
+      <!-- Header -->
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-12 pt-1 navbar-brand">
+            <img
+              src="assets/images/HughJassConstructionLogo.gif"
+              height="30"
+              class="d-inline-block align-top"
+              alt="Hugh Jass Construction Logo"
+            />
+            Hugh Jass Construction
           </div>
-        </nav>
-      </div>
-    </header>
-
-    <div class="main-container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active"></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
       <button id="logout-button">Click Here to Log Out</button>
-      <form id="sign-up-form">
-        <h2>Sign up form</h2>
-        <div>
-          <input
-            class="form-group"
-            id="sign-up-email"
-            type="email"
-            placeholder="Email"
-            required
-          />
-        </div>
-        <div>
-          <input
-            class="form-group"
-            id="sign-up-password"
-            type="password"
-            placeholder="Password"
-            required
-          />
-        </div>
-        <div>
-          <button class="btn btn-primary" id="sign-up-button">Sign Up</button>
-        </div>
-      </form>
+      <div class="main-container text-center ">
+        <div class="form-wrapper">
+          <form id="sign-up-form">
+            <h2>Sign up form</h2>
+            <div>
+              <input
+                class="form-group"
+                id="sign-up-email"
+                type="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div>
+              <input
+                class="form-group"
+                id="sign-up-password"
+                type="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <div>
+              <button class="btn btn-primary" id="sign-up-button">
+                Sign Up
+              </button>
+            </div>
+          </form>
 
-      <form id="login-form">
-        <h2>Login form</h2>
-        <div>
-          <input
-            class="form-group"
-            id="login-email"
-            type="email"
-            placeholder="Email"
-            required
-          />
+          <form id="login-form">
+            <h2>Login form</h2>
+            <div>
+              <input
+                class="form-group"
+                id="login-email"
+                type="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div>
+              <input
+                class="form-group"
+                id="login-password"
+                type="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <button class="btn btn-primary" id="login-button" type="submit">
+              Log In
+            </button>
+          </form>
+          <div class="col-sm-12">
+            <!-- Errors -->
+            <p id="errors"></p>
+          </div>
+          <div class="col-sm-12 btn-grp">
+            <button id="hideit">Member Login</button>
+            <button id="showit">Register</button>
+          </div>
         </div>
-        <div>
-          <input
-            class="form-group"
-            id="login-password"
-            type="password"
-            placeholder="Password"
-            required
-          />
-        </div>
-        <button class="btn btn-primary" id="login-button" type="submit">
-          Log In
-        </button>
-      </form>
-      <div class="col-sm-12">
-        <!-- Errors -->
-        <p id="errors"></p>
       </div>
-      <div class="col-sm-12 btn-grp">
-        <button id="hideit">Member Login</button>
-        <button id="showit">Register</button>
-      </div>
-
       <!-- Authorization -->
-
       <div class="container" id="to-do-list">
         <div class="text-center">
-          <main role="main" class="inner cover">
-            <h1 class="cover-heading">Cloud 10</h1>
-            <p class="lead">
-              This page can be used to briefly describe the app and its
-              intentions. Introduce the team and provide links to our portfolios
-              and list the resources we used.
-            </p>
-            <p class="lead">
-              <a href="./survey2.html" class="btn btn-lg btn-secondary"
-                >Try QualciTy App</a
-              >
-            </p>
-          </main>
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+              <h1>WORK. LIFE. BALANCE</h1>
+              <div class="row brief">
+                CloudX is a quality of life app that shows you your dream place
+                to live. Using our quality of life survey index, we can
+                determine the city that best matches your personality and goals.
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="rate-card">
+                <a href="./survey.html" class="btn btn-lg btn-secondary"
+                  >Try Cloud X</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <!-- Firebase and app -->
+      <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+      <script src="./assets/javascript/firebase.js" charset="utf-8"></script>
     </div>
-
-    <!-- Firebase and app -->
-    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
-    <script src="./assets/javascript/firebase.js" charset="utf-8"></script>
   </body>
 </html>

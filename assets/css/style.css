@@ -1,3 +1,19 @@
+body,
+html {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-weight: 100;
+  text-align: center;
+  font-size: 60px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 50px;
+}
+
 .karen {
   background-color: #ed6665;
 }
@@ -5,11 +21,15 @@
 .oscar {
   background-color: #d6bd80;
 }
-
+.area-logout {
+  text-align: right;
+}
 .tom {
   background-color: #64b6b8;
 }
-
+.form-wrapper {
+  padding-top: 9%;
+}
 .personalityImage {
   border-style: solid;
   border-color: white;
@@ -24,31 +44,27 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-<<<<<<< HEAD
-body,
-html {
-  height: 100%;
-}
-=======
-body, html {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-}
-h1{
-    font-weight:100;
-    text-align: center;
-    font-size: 60px;
-    
-}
-.brief{
-    text-align: center;
-    font-weight:300;
-    font-size: 17px;
-    margin-left: 40px;
-    margin-right: 40px;
 
-   
-
-
+.brief {
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
->>>>>>> 77678638e5d80d48f2747c03d155d835c090cdb6
+
+.lead {
+  font-weight: 300;
+  font-size: 20px;
+}
+.pixapic,
+.pixasun {
+  width: 100%;
+}
+.rate-card {
+  text-align: center;
+  margin-top: 4%;
+}
+#map {
+  width: 300px;
+}

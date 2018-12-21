@@ -76,6 +76,7 @@ $(document).ready(function() {
       status.html('Status: <span class="status-green">logged in</span>');
       $("#hideit").hide();
       $("#showit").hide();
+      $(".form-wrapper").hide();
       uid = firebaseUser.uid;
     } else {
       //Everything in this "else" is when no one is logged in
@@ -87,6 +88,7 @@ $(document).ready(function() {
       status.html('Status: <span class="status-red">not logged in</span>');
       $("#hideit").show();
       $("#showit").show();
+      $(".form-wrapper").show();
     }
   });
 
