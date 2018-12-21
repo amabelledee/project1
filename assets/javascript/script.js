@@ -2,8 +2,16 @@ $(document).ready(function () {
     var place = sessionStorage.getItem("place")
     console.log(place)
 
-
-
+$.ajax({
+    url: queryURL,
+    method: "GET"
+}).then(function (response) {
+    // console.log(response.hits[0].largeImageURL);
+    var img = $("<img>");
+    img.attr("src",response.hits[0].largeImageURL);
+    $(".text-muted").html(img);
+});
+});
 
     // Outcome will give name of city
 
