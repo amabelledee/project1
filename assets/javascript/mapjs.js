@@ -13,41 +13,46 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+var lat = 34.052235;
+var lon = -118.243683;
+var place = sessionStorage.getItem("place");
+console.log(place);
+
 var map;
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 34.052235, lng: -118.243683 },
+    center: { lat: lat, lng: lon },
     zoom: 8
   });
 
-  fetch("./assets/javascript/markers.json")
-    .then(function(response) {
-      return response.json();
-    })
-    .then(plotMarkers);
+  // fetch("./assets/javascript/markers.json")
+  //   .then(function(response) {
+  //     return response.json();
+  //   })
+  //   .then(plotMarkers);
 }
 
-var markers;
-var bounds;
+// var markers;
+// var bounds;
 
-function plotMarkers(m) {
-  markers = [];
-  bounds = new google.maps.LatLngBounds();
+// function plotMarkers(m) {
+//   markers = [];
+//   bounds = new google.maps.LatLngBounds();
 
-  m.forEach(function(marker) {
-    var position = new google.maps.LatLng(marker.lat, marker.lng);
+//   m.forEach(function(marker) {
+//     var position = new google.maps.LatLng(marker.lat, marker.lng);
 
-    markers.push(
-      new google.maps.Marker({
-        position: position,
-        map: map,
-        animation: google.maps.Animation.DROP
-      })
-    );
+//     markers.push(
+//       new google.maps.Marker({
+//         position: position,
+//         map: map,
+//         animation: google.maps.Animation.DROP
+//       })
+//     );
 
-    bounds.extend(position);
-  });
+//     bounds.extend(position);
+//   });
 
-  map.fitBounds(bounds);
-}
+//   map.fitBounds(bounds);
+// }

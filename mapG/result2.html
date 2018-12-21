@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -14,10 +14,12 @@
     <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+
 
 
     <title>Results</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+
 </head>
 
 <body>
@@ -51,7 +53,7 @@
                         <div class="col-md-4">
                             <img src="https://via.placeholder.com/300">
                         </div>
-                        <div id="map" class="col-md-8">
+                        <div class="col-md-8">
                             <h1 class="jumbotron-heading">Hugh Jass Construction</h1>
                             <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                                 the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
@@ -71,50 +73,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
-                          
-                                <img id="myGifs" class="card-img-top" src="https://via.placeholder.com/100" alt="Card image cap">
-                                <div class="card-body">
-                                        <div class="row text-center">
-                                                <table class="table table-hover" id="trainData">
-                                  
-                                                    <!-- <p class="filler"></p> -->
-                                                    <thead>
-                                                        <tr>
-                                                          <th>Q-Life Index</th>
-                                                          <th>Cost Living</th>
-                                                          <th>Saftey Index</th>
-                                                          <th>Health Index</th>
-                                                         
-                                                        </tr>
-                                                      </thead>
-                                                    <tbody></tbody>
-                                   
-                                              </table>
-                                            </div>
-                                            <div class="row text-center">
-                                                    <table class="table table-hover" id="qlifetwo">
-                                      
-                                                        <!-- <p class="filler"></p> -->
-                                                        <thead>
-                                                            <tr>
-                                                              <th>Climate Index</th>
-                                                              <th>Pollution Index</th>
-                                                              <th>Purchase Power</th>
-                                                              <th>Property Ratio</th>
-                                                             
-                                                            </tr>
-                                                          </thead>
-                                                        <tbody></tbody>
-                                       
-                                                  </table>
-                                                </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card mb-4 shadow-sm">
-                                
-                                <img id="mySun" class="card-img-top" src="https://via.placeholder.com/100" alt="Card image cap">
+                                <img class="card-img-top test" src="https://via.placeholder.com/100" alt="Card image cap">
                                 <div class="card-body">
                                     <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                         has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -127,16 +86,30 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
-                          
-                            <img id="mySuccess" class="card-img-top" src="https://via.placeholder.com/100" alt="Card image cap">
-                            <div class="card-body">
-                                <h6><span id="current"></span></h6>
-                                    <p>Temperature: <span id="temp"></span>&deg;F</p>
-                                    <p>High: <span id="high"></span>&deg;F</p>
-                                    <p>Low: <span id="low"></span>&deg;F</p>
-                                    <P>Humidity: <span id="humidity"></span>%</P>
-                                    <p>Pressure: <span id="pressure"></span>mmHg</p>  
+                                <img class="card-img-top" src="https://via.placeholder.com/100" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                        has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                        printer took a galley of type and scrambled it to make a type specimen book. It has
+                                        survived not only five centuries, but also the leap into electronic typesetting,
+                                        remaining essentially unchanged.
+                                    </p>
+                                </div>
                             </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img class="card-img-top" src="https://via.placeholder.com/100" alt="Card image cap">
+                                <div class="card-body">
+                                    <h6><span id="current"></span></h6>
+
+                                        <p>Temperature: <span id="temp"></span>&deg;F</p>
+                                        <p>High: <span id="high"></span>&deg;F</p>
+                                        <p>Low: <span id="low"></span>&deg;F</p>
+                                        <P>Humidity: <span id="humidity"></span>%</P>
+                                        <p>Pressure: <span id="pressure"></span>mmHg</p>
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -154,16 +127,9 @@
             <p>© 2018 Hugh Jass Construction</p>
         </div>
     </footer>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  
-    <script src="assets/javascript/mapjs.js"></script>
-    <!-- <script src="assets/javascript/Qscript.js"></script> -->
-    <script src="assets/javascript/fbdbconn.js"></script>
-    <script src="assets/javascript/script.js"></script>
 
-    
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
 </body>
 
 </html>

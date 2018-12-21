@@ -1,4 +1,4 @@
-// Initialize Firebase
+// Initialize Firebase for Quality of life display on results page
 $(document).ready(function() {
   var config = {
     apiKey: "AIzaSyA6cDMyr_xFY3O6JIqn0YacT_eD89vFe_c",

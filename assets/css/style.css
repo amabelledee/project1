@@ -65,6 +65,13 @@ h2 {
   text-align: center;
   margin-top: 4%;
 }
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
 #map {
   width: 300px;
+}
+.jumbotron-heading {
+  margin-bottom: 4%;
 }

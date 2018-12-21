@@ -21,7 +21,8 @@ $(document).ready(function() {
   }).done(function(response) {
     console.log(response);
     $("#myGifs").empty();
-
+    // $("#mySun").empty();
+    // $("#mySuccess").empty();
     var results = response.hits;
 
     if (results == "") {
