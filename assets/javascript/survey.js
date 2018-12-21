@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     var worst = ["Detroit", "St. Louis", "Memphis", "Gary", "Flint"]
 
-    var bad = ["San Bernardino", "Homestead", "Merced", "Compton", ]
+    var bad = ["San Bernardino", "Homestead", "Merced", "Compton", "oakland"]
 
     notAsBad = ["Miami Beach", "Daytona Beach", "Dayton", "Charleston", "Homestead"]
 
