@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     var worst = ["Detroit", "St. Louis", "Memphis", "Gary", "Flint"]
 
-    var bad = ["San Bernardino", "Homestead", "Merced", "Compton", ]
+    var bad = ["San Bernardino", "Homestead", "Merced", "Compton", "oakland"]
 
     notAsBad = ["Miami Beach", "Daytona Beach", "Dayton", "Charleston", "Homestead"]
 
@@ -89,7 +89,7 @@ $(document).ready(function () {
         if (0 < sum && sum < 15) {
             var outcome = worst[Math.floor(Math.random() * worst.length)];
             sessionStorage.setItem("place", outcome)
-
+            results();
 
         }
 
