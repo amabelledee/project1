@@ -18,6 +18,8 @@ $(document).ready(function () {
     }).then(function (response) {
         // console.log(response.hits[0].largeImageURL);
         $(".test").attr("src", response.hits[0].largeImageURL);
+        $(".test2").attr("src", response.hits[1].largeImageURL);
+        $(".test3").attr("src", response.hits[2].largeImageURL);
 
     });
 
