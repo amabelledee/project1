@@ -157,15 +157,10 @@ $(document).ready(function () {
     $("#close").on("click", function() {
         $("#myModal").toggle();
     })
-    
-
 });
 //here are results for the survey,
 //0-10 will have five city results and so on for every ten.
 //for those five cities there will be api calls for general information
-//in the arrays that have names, they will be changed with the api calls, 
+//in the arrays that have names, they will be changed with the api calls,
 //this can be used multiple times to get all wanted data
 //i will write a function that will randomly select one of the five cities that are in the range
-
-
-
