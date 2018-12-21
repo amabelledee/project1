@@ -8,8 +8,9 @@ $(document).ready(function () {
     }).then(function (response) {
         // console.log(response.hits[0].largeImageURL);
         var img = $("<img>");
-        img.attr("src", response.hits[0].largeImageURL);
-        $(".text-muted").html(img);
+        img.attr("src", response.hits[2].largeImageURL);
+        img.attr("class", "bottomPic")
+        $("#middle").html(img);
     });
 });
 var place = sessionStorage.getItem("place")
