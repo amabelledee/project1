@@ -54,6 +54,15 @@ h2{
 
 }
 
+.card-img-top {
+    object-fit: cover;
+    max-height: 200px;
+}
+
+.card-body {
+    height:280px;
+}
+
 /* Just added this code to make the height same height as the screen. Hope you guys don't mind :) */
 
 .footer-home {
