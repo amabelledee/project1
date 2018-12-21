@@ -89,7 +89,7 @@ $(document).ready(function () {
         if (0 < sum && sum < 15) {
             var outcome = worst[Math.floor(Math.random() * worst.length)];
             sessionStorage.setItem("place", outcome)
-
+            results();
 
         }
 
