@@ -14,20 +14,20 @@
 </head>
 
 <body>
-        <div >
-                <h1>Did you do any of these today?</h1>
-        </div>
+    <div>
+        <h1>Did you do any of these today?</h1>
+    </div>
     <div class="container">
 
-    <div class="row">
+        <div class="row">
             <div class="col-md-10">
                 <h5>Did you show gratitude?</h5>
             </div>
             <div class="col-md-1">
-                <input type="radio" name="q1" value="7"/> Yes
+                <input type="radio" name="q1" value="7" /> Yes
             </div>
             <div class="col-md-1">
-                <input type="radio" name="q1" value="0"/> No
+                <input type="radio" name="q1" value="0" /> No
             </div>
         </div>
 
@@ -258,14 +258,34 @@
                 <input type="radio" name="q20" value=0> No
             </div>
         </div>
-     </div>
+    </div>
 
     <div class="mt-3">
-            <button type="enter" id="submit" class="btn">submit</button>
+        <button type="enter" id="submit" class="btn">submit</button>
     </div>
     <div id="result">
     </div>
-</div>
+    </div>
+
+    <div id="myModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+
+
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h4 class="modal-title">Oops!</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Please answer all questions</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="close" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="./assets/javascript/survey.js"></script>
