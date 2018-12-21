@@ -14,6 +14,8 @@
     <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+
 
 
     <title>Results</title>
@@ -99,12 +101,14 @@
                             <div class="card mb-4 shadow-sm">
                                 <img class="card-img-top" src="https://via.placeholder.com/100" alt="Card image cap">
                                 <div class="card-body">
-                                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                        has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                        printer took a galley of type and scrambled it to make a type specimen book. It has
-                                        survived not only five centuries, but also the leap into electronic typesetting,
-                                        remaining essentially unchanged.
-                                    </p>
+                                    <h6><span id="current"></span></h6>
+
+                                        <p>Temperature: <span id="temp"></span>&deg;F</p>
+                                        <p>High: <span id="high"></span>&deg;F</p>
+                                        <p>Low: <span id="low"></span>&deg;F</p>
+                                        <P>Humidity: <span id="humidity"></span>%</P>
+                                        <p>Pressure: <span id="pressure"></span>mmHg</p>
+                                    
                                 </div>
                             </div>
                         </div>
