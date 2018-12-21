@@ -42,7 +42,7 @@ $(document).ready(function () {
 
     // var great = ["Austin, Texas", "Colorado Springs, Colorado", "Denver, Colorado"]
 
-
+    
 
     var sum = 0
 
@@ -148,9 +148,16 @@ $(document).ready(function () {
         }
 
         if (isNaN(sum) === true) {
-            alert("please answer all questions")
+           //alert("please answer all questions")
+           $('#myModal').toggle();
         }
+        
     });
+
+    $("#close").on("click", function() {
+        $("#myModal").toggle();
+    })
+    
 
 });
 //here are results for the survey,
