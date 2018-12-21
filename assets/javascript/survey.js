@@ -1,7 +1,12 @@
+
 $(document).ready(function() {
   var worst = ["Detroit", "St. Louis", "Memphis", "Gary", "Flint"];
 
-  var bad = ["San Bernardino", "Homestead", "Merced", "Compton"];
+  var bad = ["San Bernardino",
+             "Homestead",
+             "Merced",
+              "Compton", 
+             ];
 
   notAsBad = [
     "Miami Beach",
@@ -11,7 +16,11 @@ $(document).ready(function() {
     "Homestead"
   ];
 
-  var notGood = ["Buffalo", "Atlanta", "Tucson", "Little Rock", "Oakland"];
+  var notGood = ["Buffalo",
+                 "Atlanta",
+                 "Tucson",
+                 "Little Rock",
+                 "Oakland"];
 
   var poor = [
     "Fortsmith",
@@ -21,7 +30,11 @@ $(document).ready(function() {
     "Albuquerque"
   ];
 
-  var okay = ["Cincinnati", "Syracuse", "Hartford", "Charlotte", "Boise"];
+  var okay = ["Cincinnati", 
+              "Syracuse",
+              "Hartford",
+              "Charlotte",
+              "Boise"];
 
   var alright = [
     "Columbus",
@@ -31,11 +44,23 @@ $(document).ready(function() {
     "Lexington"
   ];
 
-  var better = ["Portland", "Asheville", "Boston", "Fort Worth", "Phoenix"];
+  var better = ["Portland",
+                "Asheville",
+                "Boston",
+                "Fort Worth",
+                "Phoenix"];
 
-  var good = ["Des Moines", "San Jose", "San Antonio", "Nashville", "San Jose"];
+  var good = ["Des Moines",
+              "San Jose",
+              "San Antonio",
+              "Nashville",
+              "San Jose"];
 
-  var great = ["Austin", "Colorado Springs", "Denver", "Huntsville", "Denver"];
+  var great = ["Austin",
+               "Colorado Springs",
+               "Denver",
+               "Huntsville",
+               "Denver"];
 
   // var worst = ["Detroit, Michigan", "St. Louis, Missouri", "Memphis, Tennessee"]
 
@@ -181,6 +206,7 @@ $(document).ready(function() {
   $("#close").on("click", function() {
     $("#myModal").toggle();
   });
+
 });
 //here are results for the survey,
 //0-10 will have five city results and so on for every ten.

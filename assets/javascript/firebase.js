@@ -107,4 +107,6 @@ $(document).ready(function() {
       errors.empty();
     }, 4000);
   };
+
 });
+
