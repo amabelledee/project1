@@ -23,6 +23,12 @@ $(document).ready(function() {
   });
 
   $("h1").text(place);
+  $("#spots").append("<ul id='newList'></ul>");
+  $("#newList").append(
+    "<li>"+place + "'s" + " Best Bar & Grill" + "</li>" +
+    "<li>"+place + "'s" + " Best Steahouse" + "</li>" +
+    "<li>"+place + "'s" + " 24 Hour Fitness" +"</li>"
+    );
 
   axios
     .get(
