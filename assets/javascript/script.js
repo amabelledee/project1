@@ -11,7 +11,7 @@ $(document).ready(function() {
     "&q=" +
     place +
     "&image_type=photo";
-
+ 
   $.ajax({
     url: queryURL,
     method: "GET"
@@ -21,7 +21,7 @@ $(document).ready(function() {
     $("#mySun").attr("src", response.hits[1].largeImageURL);
     $("#mySuccess").attr("src", response.hits[2].largeImageURL);
   });
-
+ 
   $("h1").text(place);
   $("#spots").append("<ul id='newList'></ul>");
   $("#newList").append(
@@ -29,7 +29,7 @@ $(document).ready(function() {
     "<li>"+place + "'s" + " Best Steahouse" + "</li>" +
     "<li>"+place + "'s" + " 24 Hour Fitness" +"</li>"
     );
-
+ 
   axios
     .get(
       "http://api.openweathermap.org/data/2.5/weather?q=irvine&APPID=399746c3700c10f7ded01a74709fda23"
@@ -52,7 +52,7 @@ $(document).ready(function() {
     .catch(function(error) {
       console.log(error);
     });
-
+ 
   axios
     .get(
       "http://api.openweathermap.org/data/2.5/weather?q=" +
@@ -93,4 +93,4 @@ $(document).ready(function() {
     .catch(function(error) {
       console.log(error);
     });
-});
+ });
