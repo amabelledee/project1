@@ -39,7 +39,7 @@ h2 {
 }
 .bg {
   background-image: url("../images/WorkLifeBalanceCloudX.jpg");
-  height: 100%;
+  /* height: 100%; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
