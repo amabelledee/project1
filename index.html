@@ -7,7 +7,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
+  <!-- custom css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
@@ -34,7 +34,7 @@
       </div>
     </header>
     <div class="area-logout">
-      <button id="logout-button">Click Here to Log Out</button>
+      <button id="logout-button" class="btn btn-info">Click Here to Log Out</button>
     </div>
     <div class="main-container text-center ">
       <div class="form-wrapper">
@@ -47,7 +47,8 @@
             <input class="form-group" id="sign-up-password" type="password" placeholder="Password" required />
           </div>
           <div>
-            <button class="btn btn-primary" id="sign-up-button">
+            <!--BELLE: changed btn class to btn-info and added padding-->
+            <button class="btn btn-info pl-4 pr-4" id="sign-up-button">
               Sign Up
             </button>
           </div>
@@ -61,7 +62,8 @@
           <div>
             <input class="form-group" id="login-password" type="password" placeholder="Password" required />
           </div>
-          <button class="btn btn-primary" id="login-button" type="submit">
+          <!--BELLE: changed btn class to btn-info and added padding-->
+          <button class="btn btn-info pl-4 pr-4" id="login-button" type="submit">
             Log In
           </button>
         </form>
@@ -79,30 +81,35 @@
     <div class="container" id="to-do-list">
       <div class="text-center">
         <div class="row">
-          <div class="col-md-2"></div>
+          <div class="col-md-2">
+          </div>
           <div class="col-md-8">
             <h1>WORK. LIFE. BALANCE</h1>
-            <div class="row brief" id="bgColor">
+            <div class="row brief text-left p-4" id="bgColor">
               <p>OnCloudX is a quality of life app that shows you your dream place to live. Using our quality of life
-              survey index, we can determine the city that best matches your personality and goals.</p>
+                survey index, we can determine the city that best matches your personality and goals.</p>
 
-              <p>The goal of OnCloudX is to provide the most accurate information for people looking to take the next step
-              in life. OnCloudX takes the guesswork out of moving and gives you the best place that best suits your
-              lifestyle choices. Every choice has an impact on your socioeconomic opportunities, and OnCloudX will open
-              the doors for a new life.</p>
+              <p>The goal of OnCloudX is to provide the most accurate information for people looking to take the next
+                step
+                in life. OnCloudX takes the guesswork out of moving and gives you the best place that best suits your
+                lifestyle choices. Every choice has an impact on your socioeconomic opportunities, and OnCloudX will
+                open
+                the doors for a new life.</p>
 
               <p>For marketers, our proprietary personality quiz is a useful tool to gather information on target
-              audiences. Our quiz can be tailored specifically to your needs to help you create personas, and boost
-              your marketing efforts.</p>
+                audiences. Our quiz can be tailored specifically to your needs to help you create personas, and boost
+                your marketing efforts.</p>
 
-              <p>OnCloudX uses the Google Maps API for accurate location results. To provide weather information, the Dark
-              Sky API is utilized. For imagery Pixabay will populate a photo to provide a visual for the information
-              given.</p>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="rate-card">
-              <a href="./survey.html" class="btn btn-lg btn-secondary">Try Cloud X</a>
+              <p>OnCloudX uses the Google Maps API for accurate location results. To provide weather information, the
+                Dark
+                Sky API is utilized. For imagery Pixabay will populate a photo to provide a visual for the information
+                given.</p>
+
+              <div class="col-md-12 centered">
+                <div class="rate-card">
+                  <a href="./survey.html" class="btn btn-lg btn-info">Try Cloud X</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
