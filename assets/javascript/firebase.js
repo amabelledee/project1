@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var config = {
-    apiKey: "AIzaSyA6cDMyr_xFY3O6JIqn0YacT_eD89vFe_c",
+    apiKey: "API key here",
     authDomain: "codersbay-3c400.firebaseapp.com",
     databaseURL: "https://codersbay-3c400.firebaseio.com",
     projectId: "codersbay-3c400",
